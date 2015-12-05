@@ -15,8 +15,10 @@ namespace HyrdensTimer
         static void Main(string[] args)
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HyrdensTimerForm());
+            Application.SetCompatibleTextRenderingDefault(false);        
+            HyrdensTimerForm mainForm = new HyrdensTimerForm();
+            SelectTimeForm subForm = new SelectTimeForm(mainForm);
+            if (DialogResult.OK == subForm.ShowDialog()) Application.Run(mainForm);
         }
     }
 }

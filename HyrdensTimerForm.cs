@@ -30,18 +30,14 @@ namespace HyrdensTimer
             txColor = TimeLeft.ForeColor;
             bgColor = this.BackColor;
             fullScreen = false;
-            string[] args = Environment.GetCommandLineArgs();
-            try
-            {
-                // First argument is the time in minutes
-                duration = Convert.ToInt32(args[1]); 
-            }
-            catch (Exception)
-            {
-                // If the conversion goes wrong use as default 15 minutes
-                duration = 15;
-            }
-        }        
+            Duration = 15;
+        }
+
+        public int Duration {
+            get { return duration; }
+            set { duration = value; }
+        }
+
         private void ToggleFullscreen()
         {
             if (!fullScreen)
