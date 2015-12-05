@@ -25,7 +25,7 @@ namespace HyrdensTimer {
                 // First argument is the time in minutes
                 duration = Convert.ToInt32(args[1]);
                 if ((duration < this.SelectedTimeValue.Minimum) ||
-                    (duration > this.SelectedTimeValue.Maximum)) duration = 15;s
+                    (duration > this.SelectedTimeValue.Maximum)) duration = 15;
 
             } catch (Exception) {
                 // If the conversion goes wrong use as default 15 minutes
