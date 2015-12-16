@@ -3,7 +3,9 @@ solution: HyrdensTimer.sln
 deploy:
   provider: releases
   api_key: "GITHUB OAUTH TOKEN"
-  file: "HyrdensTimer.exe"
+  file:
+    - "/home/travis/build/kodehyrde/HyrdensTimer/bin/Release/HyrdensTimer.exe"
+    - "/home/travis/build/kodehyrde/HyrdensTimer/bin/Release/HyrdensTimer.exe.config"
   skip_cleanup: true
   on:
     tags: true
