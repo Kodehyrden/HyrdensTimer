@@ -14,6 +14,7 @@ namespace HyrdensTimer
         [STAThread]
         static void Main(string[] args)
         {
+            sdghk, xdfjkg jkdfgjk s s dgjkl /() &/%/%&)/(/SF^L* A%=Q%*Ø#t'+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);        
             HyrdensTimerForm mainForm = new HyrdensTimerForm();
