@@ -12,3 +12,5 @@ Close the application by pressing alt-F4, or close the window.
 
 
 The application reads the first parameter and if able to be converted into an integer it is used for setting the time. E.g. you have a set of shortcuts on your desktop with a predefined time. When the parameter is defined on the command line the user is 
+
+JET demo change
